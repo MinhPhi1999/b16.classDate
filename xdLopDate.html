@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class date {
+
+        constructor(day,month,year) {
+            this.day=day;
+            this.month=month;
+            this.year=year;
+        }
+        getDay  (){
+            return this.day;
+        }
+        setDay(day){
+            this.day=day;
+        }
+        getMonth  (){
+            return this.month;
+        }
+        setMonth(month){
+            this.month=month;
+        }getYear  (){
+            return this.year;
+        }
+        setYear(year){
+            this.year=year;
+        }
+    }
+    let date1= new date(8,3,2022)
+    class Hour extends date{
+
+        constructor(day, month, year,hour,status) {
+            super(day, month, year);
+            this.hour=hour;
+            this.status=true;
+        }
+        setStatus(status){
+            this.status =!this.status;
+        }
+        setUpYear(){
+            this.year++;
+        }
+        getHour(){
+            return this.hour;
+        }
+        setHour(hour){
+            this.hour=hour;
+        }
+    }
+    let hour1 = new Hour(1,1,1,1)
+</script>
